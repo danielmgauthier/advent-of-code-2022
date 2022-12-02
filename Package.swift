@@ -14,9 +14,6 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .executableTarget(
             name: "AdventOfCode2022",
-            dependencies: []),
-        .testTarget(
-            name: "AdventOfCode2022Tests",
-            dependencies: ["AdventOfCode2022"]),
+            dependencies: [])
     ]
 )
