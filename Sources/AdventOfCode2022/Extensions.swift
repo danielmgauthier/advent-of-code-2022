@@ -15,3 +15,15 @@ extension Array {
         }
     }
 }
+
+extension ClosedRange {
+    func contains(_ elements: Bound...) -> Bool {
+        elements.allSatisfy { contains($0) }
+    }
+}
+
+extension StringProtocol {
+    func toInt() -> Int {
+        Int(self)!
+    }
+}
