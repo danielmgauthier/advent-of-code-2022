@@ -1,1 +1,1 @@
-Day5().run()
+Day6().run()
