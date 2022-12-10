@@ -8,7 +8,7 @@ struct Day8: Runnable {
     
     init() {
         trees = Self.input.components(separatedBy: "\n").map { row in
-            row.map { String($0).toInt() }
+            row.map { $0.toInt() }
         }
         width = trees.count
         height = trees[0].count

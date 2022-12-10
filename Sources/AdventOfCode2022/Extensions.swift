@@ -27,3 +27,9 @@ extension StringProtocol {
         Int(self)!
     }
 }
+
+extension Character {
+    func toInt() -> Int {
+        self.wholeNumberValue!
+    }
+}

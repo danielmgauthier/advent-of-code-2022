@@ -82,7 +82,7 @@ struct Day2: Runnable {
             return Round(opponent: opponentPlay, you: youPlay)
         }
         .reduce(0) { partialResult, round in
-            return partialResult + round.totalScore
+            partialResult + round.totalScore
         }
         .description
     }
