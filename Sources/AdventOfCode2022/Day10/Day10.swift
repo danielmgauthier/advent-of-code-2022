@@ -27,7 +27,7 @@ struct Day10: Runnable {
         runInstructions(add: { value in
             registerValue += value
         }, onCycleTick: {
-            if (currentCycle - 20) % 40 == 0 {
+            if currentCycle % 40 == 20 {
                 signalStrengths.append(currentCycle * registerValue)
             }
             currentCycle += 1
